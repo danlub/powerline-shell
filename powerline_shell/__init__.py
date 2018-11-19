@@ -175,7 +175,6 @@ DEFAULT_CONFIG = {
     "read_only"
     "git",
     "git_stash",
-    "jobs",
     "newline",
     "virtual_env",
     "time",
@@ -183,15 +182,10 @@ DEFAULT_CONFIG = {
     "root"
   ],
   "mode": "patched",
-  "cwd": {
-    "mode": "plain",
-    "max_depth": 3
-  },
-  "time": {
-  },
-  "hostname": {"colorize": false},
+  "cwd": {"mode": "plain", "max_depth": 3},
+  "hostname": {"colorize": False},
   "theme": "dani",
-  "vcs": {"show_symbol": true},
+  "vcs": {"show_symbol": True},
   "time": {"format": "%H:%M:%S"}
 }
 
