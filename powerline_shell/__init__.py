@@ -152,7 +152,7 @@ def find_config():
         if os.path.exists(full):
             return full
 
-DEFAULT_CONFIG = {
+DEFAULT_CONFIG_OLD = {
     "segments": [
         'virtual_env',
         'username',
@@ -165,6 +165,36 @@ DEFAULT_CONFIG = {
         'root',
     ]
 }
+
+DEFAULT_CONFIG = {
+  "segments": [
+    "username",
+    "hostname",
+    "ssh",
+    "cwd",
+    "read_only"
+    "git",
+    "git_stash",
+    "jobs",
+    "newline",
+    "virtual_env",
+    "time",
+    "jobs",
+    "root"
+  ],
+  "mode": "patched",
+  "cwd": {
+    "mode": "plain",
+    "max_depth": 3
+  },
+  "time": {
+  },
+  "hostname": {"colorize": false},
+  "theme": "dani",
+  "vcs": {"show_symbol": true},
+  "time": {"format": "%H:%M:%S"}
+}
+
 
 
 class ModuleNotFoundException(Exception):
