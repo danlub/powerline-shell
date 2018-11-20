@@ -172,7 +172,7 @@ DEFAULT_CONFIG = {
     "hostname",
     "ssh",
     "cwd",
-    "read_only"
+    "read_only",
     "git",
     "git_stash",
     "newline",
